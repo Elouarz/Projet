@@ -12,16 +12,15 @@ body {
 .color {
     background-color: hsl(217, 28%, 15%);
     padding-top: 50px;
+    margin-bottom: 10%;
 }
 
 /* .bg-curvy {
-   width: 100%;
-}
+    width: 100vh;
+    z-index: 100;
+} */
 
-.bg-curvy >img {
-    margin: 0;
-    padding: 0;
- } */
+
 
 h1,h2,h3{
     font-weight: 700;
@@ -69,6 +68,19 @@ nav >a {
 h1 ,h2 {
     font-family: 'Raleway', sans-serif;
 }
+.button2 {
+    background-color: hsl(176, 68%, 64%);
+    background-image: linear-gradient(to right ,hsl(176, 68%, 64%), hsl(198, 60%, 50%) );
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    border-color: hsl(176, 68%, 64%);
+}
+button:hover {
+    background-image: linear-gradient(to right ,hsl(176, 68%, 64%), hsl(176, 68%, 64%) );
+    color:white ;
+    transition: all 1s ease-in;
+}
 button {
     background-color: hsl(176, 68%, 64%);
     background-image: linear-gradient(to right ,hsl(176, 68%, 64%), hsl(198, 60%, 50%) );
@@ -78,9 +90,9 @@ button {
     border-color: hsl(176, 68%, 64%);
 }
 button:hover {
-    background-color:hsl(176, 68%, 64%) ;
-    width: 250px;
-    height: 50px;
+    background-image: linear-gradient(to right ,hsl(176, 68%, 64%), hsl(176, 68%, 64%) );
+    color:white ;
+    transition: all 1s ease-in;
 }
 
 .flex {
@@ -94,6 +106,10 @@ button:hover {
 }
 .margin-top {
     margin-top: 22px;
+}
+
+.h-width {
+    width: 50%;
 }
 
 /* .width {
@@ -156,9 +172,10 @@ button:hover {
 }
 .background {
     background-color: hsl(219, 30%, 18%);
-    padding: 3%;
-    margin-right: 2%;
+    padding: 10px;
+    margin-right: 15px;
     border-radius: 5px;
+    z-index: 100;
 }
 .image {
     border-radius: 100px;
@@ -189,19 +206,25 @@ input {
     height: 34px;
     margin-right: 10px;
     border-color: white;
-    padding-left: 5%;
+    padding-left: 30px;
+    color:black;
 }
 .last-section {
     background-color: hsl(216, 53%, 9%);
-    padding: 13% 3% 3% 7%;
+    padding: 130px 30px 10px;
+    
 }
 .no-margin {
     margin: 0;
     padding-left: 10px ;
     max-width: 300px;
+    line-height: 1.8;
 }
 .padding {
-    padding-bottom: 10px;
+    margin-bottom: 21px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 .mar {
     margin-bottom: 0;
@@ -209,7 +232,7 @@ input {
 }
 div.bgcoler {
     position: relative;
-    top: 110px;
+    top: 95px;
 }
 .fa-brands{
     border: solid 1px white;
@@ -220,6 +243,11 @@ div.bgcoler {
 }
 .no-space {
     margin-top: 0;
+}
+.icon-quotes {
+    position: relative;
+    bottom: -14px;
+    left: -9px;  
 }
 
 .footer-width {
@@ -234,6 +262,30 @@ div.bgcoler {
 }
 .img-container img{
     width: 100%;
+}
+::placeholder {
+    color: rgba(0, 0, 0, 0.407);
+    font-size:x-small;
+}
+.fa-solid {
+    padding-top: 5px;
+    padding-right: 20px;
+}
+.flex-row {
+    display: flex;
+    margin-bottom: 30px;
+}
+.last-pad-left {
+    margin-right: auto;
+    padding-left: 0px;
+}
+.line-height {
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.marg-done {
+    margin-bottom: 20px;
 }
 
 /* @media only screen and (max-width: 1440px) {
@@ -251,6 +303,35 @@ div.bgcoler {
         margin-left: auto;
         margin-right: auto;
     }
+    .pic-size >img {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .background {
+        margin-bottom: 40px;
+        padding: 30px;
+        margin-right: 0;
+    }
+    .background >p {
+        margin: 0;
+        line-height: 1.8;
+    }
+    .color {
+        margin-bottom: 25%;
+    }
+    .third-marg-only {
+        margin-bottom: 100px;
+    }
+    
+    .big-title {
+        font-size: revert;
+    }
+    .p-marg-bot {
+        margin-bottom: 10px;
+    }
+    .h-width {
+        width: 100%;
+    }
     .logo {
         width: 30%;
     }
@@ -265,7 +346,14 @@ div.bgcoler {
     }
     .flex {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+    }
+    .text-align {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .last-marg-top {
+        margin-top: 50px;
     }
     .imp-marg-bot {
         margin-bottom: 0px;
@@ -278,23 +366,31 @@ div.bgcoler {
         max-width: 100% ;
         margin-left: 0px;
     }
-    .pic-size img {
-        width: 80%;
+    .line-height {
+        line-height: 1.5;
     }
     .bgcoler {
-        padding: 5% 0 10% 0;
+        padding: 50px 30px;
+    }
+    .body1 {
+        max-width: 390px;
+        margin-left: auto;
+        margin-right: auto;
     }
     div.bgcoler {
-        top: -19px;
+        top: 160px;
     }
     .last-section {
-        padding: 5% 10% 5% 10%;
+
+        padding:230px 20px 30px 20px;
     }
     input {
         margin-right: 0px;
+        width: 266px;
     }
-    p::first-letter{
-        padding-left: 10px;
+    button {
+        width: 302px;
+        margin-top: 20px;
     }
     .width-of-text {
         max-width: 85%;
