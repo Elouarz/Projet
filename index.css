@@ -9,6 +9,10 @@ body {
     margin-right: auto;
 }
 
+.header-padding {
+    padding-bottom: 80px;
+}
+
 .color {
     background-color: hsl(217, 28%, 15%);
     padding-top: 50px;
